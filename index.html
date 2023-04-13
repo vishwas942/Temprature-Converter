@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="images/images.jpg">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>TEMPRATURE CONVERTER</title>
+</head>
+<body>
+
+ <div class= "container w-9/12 rounded-xl relative flex flex-col">
+
+        <header class="header_text mt-0 w-full absolute p-7 text-center text-3xl font-semibold border-b-2 border-cyan-400" >TEMPRATURE CONVERTER</header>
+
+            <main class="content w-full flex flex-row ">
+
+
+                <!-- Celcuis block -->
+
+
+            <div class="Celcius w-72 ">
+                <!-- oninput="cel_to_FK()" -->
+
+                <div id="function_C">
+                    <input class="cel_put" type="number" >
+
+                 <div id="unit_C">
+                    <span>&#176;</span>
+                    <h1>C</h1>
+                </div>
+
+                </div>
+                <div class="label_c">
+                    CELCUIS
+                </div>
+             </div>
+
+
+             <!-- fahrenhiet block -->
+
+
+            <div class="fahrenhiet w-72 relative">
+                <div id="function_F">
+                    <input class="far_put" type="number" oninput="fah_to_CK()">
+                    <div id="unit_F">
+                    <span>&#176;</span>
+                    <h1>F</h1>
+                </div>
+                </div>
+                <div class="label_f">
+                    FAHRENHIET
+                </div>
+            </div>
+
+
+            <!-- kelvin Block -->
+
+            <!-- oninput="kel_to_CF()" -->
+
+            <div class="kelvin w-72 relative ">
+                <div id="function_K">
+                    <input class="kel_put" type="number" >
+                    <h1>K</h1>
+                </div>
+                <div class="label_k h-1/5">
+                    KELVIN
+                </div>
+            </div>
+
+            </main> 
+
+    </div>
+    
+
+    <script src="script/script.js"></script>
+</body>
+</html>
